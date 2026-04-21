@@ -4,15 +4,12 @@ import re
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 from PyPDF2 import PdfReader
-import subprocess
+
 
 # LOAD MODELS
 
-try:
-    nlp = spacy.load("en_core_web_sm")
-except:
-    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
-    nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_sm")
+
     
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
