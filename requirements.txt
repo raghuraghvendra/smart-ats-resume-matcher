@@ -1,6 +1,5 @@
-streamlit
+streamlit==1.33.0
 spacy==3.7.2
-sentence-transformers
-scikit-learn
-torch
-PyPDF2
+scikit-learn==1.4.2
+sentence-transformers==2.6.1
+PyPDF2==3.0.1
